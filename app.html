@@ -70,18 +70,36 @@
 </div>
 
 <script src="js/config.js"></script>
+
+<script>
+  if (!window.APP_CONFIG) {
+    console.error('APP_CONFIG لم يتم تحميله — تحقق من مسار js/config.js');
+  } else {
+    console.log('APP_CONFIG LOADED', window.APP_CONFIG);
+  }
+</script>
+
+<!-- UI -->
 <script src="js/ui/toast.js"></script>
 <script src="js/ui/modal.js"></script>
 <script src="js/ui/loading.js"></script>
+
+<!-- Authentication -->
 <script src="js/auth.js"></script>
+
+<!-- Blogger API -->
 <script src="js/api/blogger-api.js"></script>
 <script src="js/api/menu-repository.js"></script>
+
+<!-- Modules -->
 <script src="js/modules/image-upload.js"></script>
 <script src="js/modules/product-form.js"></script>
 <script src="js/modules/products.js"></script>
 <script src="js/modules/settings.js"></script>
 <script src="js/modules/qr-generator.js"></script>
+
+<!-- Data Migration -->
 <script src="migrated-menu-data.js"></script>
+
+<!-- Main Application -->
 <script src="js/main.js"></script>
-</body>
-</html>
