@@ -4,16 +4,16 @@
 window.APP_CONFIG = {
   // [إلزامي] Client ID من Google Cloud Console (OAuth 2.0 Web Application)
   // Google Cloud Console → APIs & Services → Credentials
-  GOOGLE_CLIENT_ID: 'YOUR_GOOGLE_OAUTH_CLIENT_ID.apps.googleusercontent.com',
+  GOOGLE_CLIENT_ID: '960694882182-6li9fagipotpktpl08cvcgbmkoh4n6k1.apps.googleusercontent.com',
 
   // [إلزامي] API Key عام (يُستخدم للقراءة العامة بدون تسجيل دخول)
   // ⚠️ يجب أن تطابق REMOTE_MENU_SOURCE.API_KEY داخل ملف القالب أيضًا
-  GOOGLE_API_KEY: 'YOUR_GOOGLE_API_KEY',
+  GOOGLE_API_KEY: 'AIzaSyAH4Gr8qunI0QnzV_NmqmFudv9b-gk-yWQ',
 
   // [إلزامي] رقم مدونة Blogger (Blog ID) — يظهر في رابط لوحة Blogger:
   // blogger.com/blog/posts/{BLOG_ID}
   // ⚠️ يجب أن يطابق REMOTE_MENU_SOURCE.BLOG_ID داخل ملف القالب أيضًا
-  BLOG_ID: 'YOUR_BLOGGER_BLOG_ID',
+  BLOG_ID: '7995406045121029953',
 
   // [إلزامي] صلاحية الوصول المطلوبة من Google (كتابة/قراءة على Blogger)
   OAUTH_SCOPE: 'https://www.googleapis.com/auth/blogger',
