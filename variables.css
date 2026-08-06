@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Design Tokens — مطابقة لهوية قالب Balkony الأصلي (نفس المتغيرات بالضبط
+   من balkony-blogger-template.xml) بالإضافة إلى متغيرات خاصة بواجهة الإدارة
+   ========================================================================== */
+:root{
+  /* -- منسوخة حرفيًا من القالب الأصلي للحفاظ على نفس الهوية -- */
+  --bg-deep:#0a0a0a;
+  --bg-elevated:#141210;
+  --bg-elevated-2:#1c1815;
+  --purple:#8a6d1a;
+  --purple-2:#d4af37;
+  --blue:#c9a227;
+  --teal:#f2d675;
+  --cyan:#f0c14b;
+  --glass:rgba(255,255,255,.055);
+  --glass-strong:rgba(255,255,255,.09);
+  --glass-border:rgba(212,175,55,.16);
+  --text-main:#f5f0e6;
+  --text-muted:#b8ac91;
+  --text-dim:#7d735c;
+  --success:#22c55e;
+  --gold:#f0c14b;
+  --gradient-main:linear-gradient(135deg,var(--purple) 0%,var(--blue) 55%,var(--teal) 100%);
+  --gradient-neon:linear-gradient(135deg,var(--cyan),var(--purple-2));
+  --radius-xl:28px;
+  --radius-lg:22px;
+  --radius-md:16px;
+  --radius-sm:10px;
+  --shadow-soft:0 10px 40px rgba(0,0,0,.5);
+  --shadow-glow:0 0 40px rgba(212,175,55,.35);
+  --danger:#ef4444;
+  --danger-grad:linear-gradient(135deg,#ef4444 0%,#f97316 100%);
+  --shadow-danger:0 8px 26px rgba(239,68,68,.45);
+  --font-display:'Cairo',sans-serif;
+  --font-body:'Tajawal',sans-serif;
+  color-scheme:dark;
+
+  /* -- إضافات خاصة بلوحة التحكم (نفس روح القالب بأسلوب Dashboard مضغوط) -- */
+  --sidebar-w:264px;
+  --topbar-h:64px;
+  --panel-border:1px solid var(--glass-border);
+  --input-bg:rgba(255,255,255,.04);
+  --input-border:rgba(255,255,255,.1);
+  --transition-fast:.15s ease;
+  --transition-base:.25s cubic-bezier(.4,0,.2,1);
+}
+
+html[data-theme="light"]{
+  --bg-deep:#faf7f0;
+  --bg-elevated:#ffffff;
+  --bg-elevated-2:#f5efdf;
+  --glass:rgba(40,30,10,.045);
+  --glass-strong:rgba(40,30,10,.07);
+  --glass-border:rgba(180,140,30,.16);
+  --text-main:#211c12;
+  --text-muted:#5c5240;
+  --text-dim:#8c8065;
+  --shadow-soft:0 10px 30px rgba(60,45,10,.08);
+  --input-bg:rgba(0,0,0,.03);
+  --input-border:rgba(0,0,0,.1);
+  color-scheme:light;
+}

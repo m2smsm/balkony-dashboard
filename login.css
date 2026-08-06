@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Login Page
+   ========================================================================== */
+.login-wrap{
+  min-height:100vh; display:flex; align-items:center; justify-content:center; padding:20px;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(212,175,55,.08), transparent 45%),
+    radial-gradient(circle at 80% 80%, rgba(201,162,39,.06), transparent 45%),
+    var(--bg-deep);
+}
+.login-card{
+  width:100%; max-width:380px; background:var(--glass); border:var(--panel-border);
+  border-radius:var(--radius-xl); padding:36px 30px; box-shadow:var(--shadow-soft); text-align:center;
+}
+.login-logo{ width:56px; height:56px; border-radius:16px; object-fit:cover; margin:0 auto 18px; }
+.login-title{ font-size:20px; margin-bottom:6px; }
+.login-sub{ font-size:13px; color:var(--text-muted); margin-bottom:28px; }
+.login-btn{
+  width:100%; display:flex; align-items:center; justify-content:center; gap:10px;
+  padding:13px; border-radius:var(--radius-sm); background:#fff; color:#1a1a1a;
+  font-weight:700; font-size:14px; transition:opacity var(--transition-fast);
+}
+.login-btn:hover{ opacity:.9; }
+.login-btn img{ width:18px; height:18px; }
+.login-foot{ margin-top:22px; font-size:11px; color:var(--text-dim); }
+.login-error{ display:none; margin-top:14px; padding:10px 12px; border-radius:var(--radius-sm); background:rgba(239,68,68,.1); color:var(--danger); font-size:12px; }
+.login-error.show{ display:block; }
