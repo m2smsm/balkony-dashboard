@@ -8,7 +8,7 @@ window.APP_CONFIG = {
 
   // [إلزامي] API Key عام (يُستخدم للقراءة العامة بدون تسجيل دخول)
   // ⚠️ يجب أن تطابق REMOTE_MENU_SOURCE.API_KEY داخل ملف القالب أيضًا
-  GOOGLE_API_KEY: 'AIzaSyAH4Gr8qunI0QnzV_NmqmFudv9b-gk-yWQ',
+  GOOGLE_API_KEY: 'AIzaSyCH8RbuZWU2jL8t7UAoLVgyRZyltHypcUY',
 
   // [إلزامي] رقم مدونة Blogger (Blog ID) — يظهر في رابط لوحة Blogger:
   // blogger.com/blog/posts/{BLOG_ID}
