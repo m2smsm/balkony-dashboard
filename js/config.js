@@ -22,7 +22,7 @@ window.APP_CONFIG = {
   // مرتبطة من أي مكان بالموقع، حتى يقرأها القالب لأي زائر بدون تسجيل دخول).
   // ⚠️ يجب أن تكون هذه القيمة مطابقة حرفيًا لقيمة REMOTE_MENU_SOURCE.DATA_POST_TITLE
   // داخل template/balkony-blogger-template-final.xml — غيّرهما معًا دائمًا.
-  MENU_DATA_POST_TITLE: '__MENU_DATA__ (لا تحذف - تستخدمها لوحة التحكم)',
+  MENU_DATA_POST_TITLE: 'DATA_POST_TITLE: '__MENU_DATA__',
 
   // لغة الواجهة الافتراضية للوحة التحكم
   DEFAULT_LANG: 'ar',
