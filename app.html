@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>لوحة تحكم Balkony</title>
+
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+
+<link rel="stylesheet" href="css/variables.css"/>
+<link rel="stylesheet" href="css/base.css"/>
+<link rel="stylesheet" href="css/components.css"/>
+<link rel="stylesheet" href="css/dashboard.css"/>
+</head>
+<body>
+
+<div class="page-loader" id="pageLoader"><span class="spinner" style="width:28px;height:28px;color:var(--purple-2);"></span></div>
+
+<div class="app-shell">
+  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <img id="brandLogo" src="" alt="" style="display:none;"/>
+      <div>
+        <div class="name">Balkony</div>
+        <div class="sub">لوحة تحكم المنيو</div>
+      </div>
+    </div>
+
+    <nav class="nav-group">
+      <div class="nav-group-title">الرئيسية</div>
+      <a href="#overview" class="nav-link" data-panel="overview"><i class="fa-solid fa-house"></i><span>نظرة عامة</span></a>
+      <a href="#products" class="nav-link" data-panel="products"><i class="fa-solid fa-utensils"></i><span>المنتجات</span></a>
+      <a href="#settings" class="nav-link" data-panel="settings"><i class="fa-solid fa-gear"></i><span>الإعدادات</span></a>
+      <a href="#qrcode" class="nav-link" data-panel="qrcode"><i class="fa-solid fa-qrcode"></i><span>QR المنيو</span></a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="user-chip">
+        <img id="userAvatar" src="" alt=""/>
+        <div class="info">
+          <div class="u-name" id="userName">—</div>
+          <div class="u-email" id="userEmail">—</div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-ghost btn-block" id="logoutBtn" style="margin-top:8px;justify-content:flex-start;">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i><span>تسجيل الخروج</span>
+      </button>
+    </div>
+  </aside>
+
+  <div class="main-area">
+    <header class="topbar">
+      <button type="button" class="btn btn-icon btn-secondary menu-toggle" id="menuToggle" aria-label="القائمة"><i class="fa-solid fa-bars"></i></button>
+      <div class="topbar-title" id="topbarTitle">نظرة عامة</div>
+      <div class="topbar-search">
+        <i class="fa-solid fa-search"></i>
+        <input type="text" class="input" id="globalSearch" placeholder="ابحث عن منتج..."/>
+      </div>
+    </header>
+
+    <main class="content" id="panelRoot">
+      <!-- تُبنى محتويات كل قسم ديناميكيًا هنا عبر main.js -->
+    </main>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/ui/toast.js"></script>
+<script src="js/ui/modal.js"></script>
+<script src="js/ui/loading.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/api/blogger-api.js"></script>
+<script src="js/api/menu-repository.js"></script>
+<script src="js/modules/image-upload.js"></script>
+<script src="js/modules/product-form.js"></script>
+<script src="js/modules/products.js"></script>
+<script src="js/modules/settings.js"></script>
+<script src="js/modules/qr-generator.js"></script>
+<script src="migrated-menu-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
